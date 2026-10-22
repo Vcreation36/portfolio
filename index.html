@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b18" />
+  <meta name="description" content="A modern personal portfolio showcasing selected work, skills, and contact details." />
+  <title>Vidyashree K L | Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Vidyashree K L home"><span class="brand-mark">V</span><span>Vidyashree<span class="accent">.</span></span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="availability"><span class="status-dot"></span> Available for select projects</div>
+        <p class="eyebrow">HELLO, I'M VIDYASHREE K L</p>
+        <h1>I build digital<br />experiences that <span class="gradient-text">matter.</span></h1>
+        <p class="hero-description">A creative developer turning thoughtful ideas into beautiful, useful, and high-performing digital products.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span>↗</span></a><a class="text-link" href="#contact">Get in touch <span>→</span></a></div>
+        <div class="hero-meta"><div><strong>3+</strong><span>Projects</span></div><div><strong>04+</strong><span>Skills</span></div><div><strong>01</strong><span>Degree</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <div class="portrait-glow"></div>
+          <img class="profile-photo" src="/assets/profile.jpg" alt="Vidyashree K L profile portrait" onerror="this.style.display='none';document.getElementById('portrait-fallback').style.display='grid';" />
+          <div class="portrait-fallback" id="portrait-fallback" aria-label="Profile photo placeholder"><span>VK</span></div>
+          <div class="portrait-caption"><span class="caption-icon">✦</span><div><strong>Creative Developer</strong><small>Design-minded. Detail-driven.</small></div></div>
+        </div>
+        <div class="floating-card card-top"><span class="float-icon">✳</span><div><strong>Clean code</strong><small>Built to scale</small></div></div>
+        <div class="floating-card card-bottom"><span class="float-icon purple">↗</span><div><strong>Thoughtful design</strong><small>Made for people</small></div></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Good work starts with <span class="gradient-text">curiosity.</span></h2></div>
+      <div class="about-grid"><p class="about-lead">I partner with people and teams to bring ambitious ideas to life through a mix of design thinking, modern development, and a love for the details.</p><div class="about-detail"><p>From the first sketch to the final deployment, I care about creating experiences that feel effortless to use and are built on a solid technical foundation.</p><p>When I'm not at my desk, you'll find me learning something new, exploring design inspiration, or enjoying a good cup of coffee.</p><a class="text-link" href="#contact">A little more about working together <span>→</span></a></div></div>
+    </section>
+
+    <section class="section-wrap skills-section" id="skills">
+      <div class="section-heading"><p class="eyebrow">MY TOOLKIT</p><h2>Tools I use to make <span class="gradient-text">things happen.</span></h2><p class="section-intro">A practical mix of creative and technical skills to take projects from idea to launch.</p></div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-symbol">◈</span><h3>Frontend</h3><p>Building fast, accessible, responsive interfaces.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div></article>
+        <article class="skill-card"><span class="skill-symbol">⌘</span><h3>Backend</h3><p>Reliable APIs and application logic.</p><div class="tag-list"><span>Node.js</span><span>Express</span><span>REST APIs</span></div></article>
+        <article class="skill-card"><span class="skill-symbol">◉</span><h3>Data & tools</h3><p>Organized data and smooth development workflows.</p><div class="tag-list"><span>MongoDB</span><span>Git</span><span>GitHub</span></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap projects-section" id="projects">
+      <div class="section-heading projects-heading"><div><p class="eyebrow">SELECTED WORK</p><h2>Some things I've <span class="gradient-text">made.</span></h2></div><p class="section-intro">A few projects that reflect how I think, design, and build.</p></div>
+      <div class="projects-grid">
+        <article class="project-card project-featured"><div class="project-art art-purple"><div class="mock-window"><div class="mock-dots"><i></i><i></i><i></i></div><div class="mock-content"><span class="mock-kicker">YOUR NEXT BIG IDEA</span><b>Build something<br/>remarkable.</b><div class="mock-bar"></div></div></div><span class="art-orb"></span></div><div class="project-info"><div><p class="project-type">WEB DESIGN · DEVELOPMENT</p><h3>Studio Landing Page</h3></div><a class="project-link" href="#contact" aria-label="Ask about Studio Landing Page">↗</a><p>A polished digital home for a growing creative studio, designed to turn visits into conversations.</p><div class="tag-list"><span>HTML/CSS</span><span>JavaScript</span><span>Responsive UI</span></div></div></article>
+        <article class="project-card"><div class="project-art art-blue"><div class="dashboard-mock"><div class="dash-side"></div><div class="dash-main"><div class="dash-line"></div><div class="dash-stats"><i></i><i></i><i></i></div><div class="dash-chart"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div></div></div><div class="project-info"><div><p class="project-type">PRODUCT · DASHBOARD</p><h3>Insight Dashboard</h3></div><a class="project-link" href="#contact" aria-label="Ask about Insight Dashboard">↗</a><p>A clear, responsive dashboard that makes complex information easier to understand.</p><div class="tag-list"><span>JavaScript</span><span>API</span><span>Data UI</span></div></div></article>
+        <article class="project-card"><div class="project-art art-pink"><div class="shop-mock"><div class="shop-photo"></div><div class="shop-lines"><i></i><i></i><b></b></div><div class="shop-badge">NEW<br/>COLLECTION</div></div></div><div class="project-info"><div><p class="project-type">E-COMMERCE · UI</p><h3>Everyday Goods</h3></div><a class="project-link" href="#contact" aria-label="Ask about Everyday Goods">↗</a><p>A warm, product-focused shopping experience with a simple and intuitive layout.</p><div class="tag-list"><span>UI Design</span><span>CSS</span><span>Accessibility</span></div></div></article>
+      </div>
+      <p class="demo-note">Demo project cards are examples. Replace them with your client's real projects before publishing.</p>
+    </section>
+
+    <section class="section-wrap contact-section" id="contact">
+      <div class="contact-panel"><div class="contact-copy"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make something <span class="gradient-text">great together.</span></h2><p>Have an idea, a challenge, or just want to say hello? Send a message and I'll get back to you.</p><div class="contact-detail"><span>✉</span><a href="mailto:hello@example.com" id="contact-email">hello@example.com</a></div><div class="social-links"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Smith" maxlength="80" required />
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" maxlength="254" required />
+          <label for="subject">Subject <span>(optional)</span></label><input id="subject" name="subject" type="text" placeholder="Project enquiry" maxlength="120" />
+          <label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about your project..." maxlength="3000" required></textarea>
+          <button class="button button-primary submit-button" type="submit">Send message <span>↗</span></button><p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">V</span><span>vidyashree<span class="accent">.</span></span></a><p>Designed with intention. Built with care.</p><span>©<span id="year"></span> Vidyashree K L</span></footer>
+</body>
+</html>
